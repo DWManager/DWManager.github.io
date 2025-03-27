@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>DW Manager | Research</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body onload="load()">
+        <h1>Research Manager</h1>
+        <h3>Welcome to the <em>Research Manager</em>!</h3>
+        <div>
+            <label>
+                <input type="checkbox" id="rodger">
+                Using Rodger?
+            </label>
+            <h2>COMMON</h2>
+            <p class="researchLabel" id="Boxten">Boxten: 0%</p>
+            <button onclick="Encounter('Boxten', 0)">Encountered</button>
+            <button onclick="Capsule('Boxten', 0)">Collected Capsule</button>
+            <p class="researchLabel" id="Cosmo">Cosmo: 0%</p>
+            <button onclick="Encounter('Cosmo', 1)">Encountered</button>
+            <button onclick="Capsule('Cosmo', 1)">Collected Capsule</button>
+            <p class="researchLabel" id="Poppy">Poppy: 0%</p>
+            <button onclick="Encounter('Poppy', 2)">Encountered</button>
+            <button onclick="Capsule('Poppy', 2)">Collected Capsule</button>
+            <p class="researchLabel" id="Looey">Looey: 0%</p>
+            <button onclick="Encounter('Looey', 3)">Encountered</button>
+            <button onclick="Capsule('Looey', 3)">Collected Capsule</button>
+            <p class="researchLabel" id="Shrimpo">Shrimpo: 0%</p>
+            <button onclick="Encounter('Shrimpo', 4)">Encountered</button>
+            <button onclick="Capsule('Shrimpo', 4)">Collected Capsule</button>
+            <p class="researchLabel" id="Tisha">Tisha: 0%</p>
+            <button onclick="Encounter('Tisha', 5)">Encountered</button>
+            <button onclick="Capsule('Tisha', 5)">Collected Capsule</button>
+            <p class="researchLabel" id="Yatta">Yatta: 0%</p>
+            <button onclick="Encounter('Yatta', 6)">Encountered</button>
+            <button onclick="Capsule('Yatta', 6)">Collected Capsule</button>
+            <h2>UNCOMMON</h2>
+            <p class="researchLabel" id="Brightney">Brightney: 0%</p>
+            <button onclick="Encounter('Brightney', 7)">Encountered</button>
+            <button onclick="Capsule('Brightney', 7)">Collected Capsule</button>
+            <p class="researchLabel" id="Finn">Finn: 0%</p>
+            <button onclick="Encounter('Finn', 8)">Encountered</button>
+            <button onclick="Capsule('Finn', 8)">Collected Capsule</button>
+            <p class="researchLabel" id="Razzle & Dazzle">Razzle & Dazzle: 0%</p>
+            <button onclick="Encounter('Razzle & Dazzle', 9)">Encountered</button>
+            <button onclick="Capsule('Razzle & Dazzle', 9)">Collected Capsule</button>
+            <p class="researchLabel" id="Rodger">Rodger: 0%</p>
+            <button onclick="Encounter('Rodger', 10)">Encountered</button>
+            <button onclick="Capsule('Rodger', 10)">Collected Capsule</button>
+            <p class="researchLabel" id="Teagan">Teagan: 0%</p>
+            <button onclick="Encounter('Teagan', 11)">Encountered</button>
+            <button onclick="Capsule('Teagan', 11)">Collected Capsule</button>
+            <p class="researchLabel" id="Toodles">Toodles: 0%</p>
+            <button onclick="Encounter('Toodles', 12)">Encountered</button>
+            <button onclick="Capsule('Toodles', 12)">Collected Capsule</button>
+            <p class="researchLabel" id="Connie">Connie: 0%</p>
+            <button onclick="Encounter('Connie', 13)">Encountered</button>
+            <button onclick="Capsule('Connie', 13)">Collected Capsule</button>
+            <h2>RARE</h2>
+            <p class="researchLabel" id="Flutter">Flutter: 0%</p>
+            <button onclick="Encounter('Flutter', 14)">Encountered</button>
+            <button onclick="Capsule('Flutter', 14)">Collected Capsule</button>
+            <p class="researchLabel" id="Gigi">Gigi: 0%</p>
+            <button onclick="Encounter('Gigi', 15)">Encountered</button>
+            <button onclick="Capsule('Gigi', 15)">Collected Capsule</button>
+            <p class="researchLabel" id="Glisten">Glisten: 0%</p>
+            <button onclick="Encounter('Glisten', 16)">Encountered</button>
+            <button onclick="Capsule('Glisten', 16)">Collected Capsule</button>
+            <p class="researchLabel" id="Goob">Goob: 0%</p>
+            <button onclick="Encounter('Goob', 17)">Encountered</button>
+            <button onclick="Capsule('Goob', 17)">Collected Capsule</button>
+            <p class="researchLabel" id="Scraps">Scraps: 0%</p>
+            <button onclick="Encounter('Scraps', 18)">Encountered</button>
+            <button onclick="Capsule('Scraps', 18)">Collected Capsule</button>
+            <h2>MAINS</h2>
+            <p class="researchLabel" id="Astro">Astro: 0%</p>
+            <button onclick="Encounter('Astro', 19)">Encountered</button>
+            <button onclick="Capsule('Astro', 19)">Collected Capsule</button>
+            <p class="researchLabel" id="Pebble">Pebble: 0%</p>
+            <button onclick="Encounter('Pebble', 20)">Encountered</button>
+            <button onclick="Capsule('Pebble', 20)">Collected Capsule</button>
+            <p class="researchLabel" id="Shelly">Shelly: 0%</p>
+            <button onclick="Encounter('Shelly', 21)">Encountered</button>
+            <button onclick="Capsule('Shelly', 21)">Collected Capsule</button>
+            <p class="researchLabel" id="Sprout">Sprout: 0%</p>
+            <button onclick="Encounter('Sprout', 22)">Encountered</button>
+            <button onclick="Capsule('Sprout', 22)">Collected Capsule</button>
+            <p class="researchLabel" id="Vee">Vee: 0%</p>
+            <button onclick="Encounter('Vee', 23)">Encountered</button>
+            <button onclick="Capsule('Vee', 23)">Collected Capsule</button>
+            <h2>LETHAL</h2>
+            <p class="researchLabel" id="Dandy">Dandy: 0%</p>
+            <button onclick="Encounter('Dandy', 24)">Encountered</button>
+            <button onclick="Capsule('Dandy', 24)">Collected Capsule</button>
+            <h2>EVENT</h2>
+            <p class="researchLabel" id="Rudie">Rudie: 0%</p>
+            <button onclick="Encounter('Rudie', 25)">Encountered</button>
+            <button onclick="Capsule('Rudie', 25)">Collected Capsule</button>
+            <p class="researchLabel" id="Ginger">Ginger: 0%</p>
+            <button onclick="Encounter('Ginger', 26)">Encountered</button>
+            <button onclick="Capsule('Ginger', 26)">Collected Capsule</button>
+            <p class="researchLabel" id="Coal">Coal: 0%</p>
+            <button onclick="Encounter('Coal', 27)">Encountered</button>
+            <button onclick="Capsule('Coal', 27)">Collected Capsule</button>
+            <p class="researchLabel" id="Bobette">Bobette: 0%</p>
+            <button onclick="Encounter('Bobette', 28)">Encountered</button>
+            <button onclick="Capsule('Bobette', 28)">Collected Capsule</button>
+        </div><br>
+        <button onclick="reset()">Reset</button>
+        <h1>Pages</h1>
+        <button onclick="location.replace('https://DWManager.github.io/pages/research')">Research Manager</button>
+        <button onclick="location.replace('https://DWManager.github.io/pages/toonrequirement')">Toon Requirement Manager</button>
+        <button onclick="location.replace('https://DWManager.github.io/pages/toon')">Toon Manager</button>
+        <script>
+            var research = [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+
+            function Encounter(twisted, index) {
+                var rodger = document.getElementById("rodger")
+                var twistedElement = document.getElementById(twisted)
+                research[index] += rodger.checked ? 10 : 5
+                if (research[index] > 100) {
+                    research[index] = 100
+                }
+                twistedElement.innerHTML = twisted + ": " + research[index] + "%"
+                save()
+            }
+            function Capsule(twisted, index) {
+                var rodger = document.getElementById("rodger")
+                var twistedElement = document.getElementById(twisted)
+                research[index] += rodger.checked ? 2 : 1
+                if (research[index] > 100) {
+                    research[index] = 100
+                }
+                twistedElement.innerHTML = twisted + ": " + research[index] + "%"
+                save()
+            }
+            function save() {
+                for (var i = 0; i < research.length; i++) {
+                    localStorage.setItem(`research[${i}]`, JSON.stringify(research[i]))
+                }
+            }
+            function load() {
+                var researchLabels = document.querySelectorAll(".researchLabel")
+                for (var i = 0; i < research.length; i++) {
+                    research[i] = parseInt(localStorage.getItem(`research[${i}]`)) || 0
+                }
+                researchLabels.forEach(function(element, index) {
+                    element.innerHTML = element.id + ": " + research[index] + "%"
+                });
+            }
+            function reset() {
+                for (var i = 0; i < research.length; i++) {
+                    research[i] = 0
+                }
+                save()
+                location.reload()
+            }
+        </script>
+    </body>
+</html>
